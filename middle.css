@@ -1,0 +1,276 @@
+/* midlde selector */
+.middle{
+    width: 640px;
+    height: 400px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.middle-head{
+    display: flex;
+    justify-content: baseline;
+    gap: 10px;
+    padding: 15px 20px;
+    background-color: rgb(40, 40, 40);
+}
+.head-btn{
+    padding: 10px 15px;
+    border: none;
+    background-color: rgb(60, 60, 60);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.head-btn:hover{
+    background-color: rgb(80, 80, 80);
+}
+.middle-main{
+    flex: 1;
+    overflow-y: auto;
+}
+.middle-main::-webkit-scrollbar{
+    width: 10px;
+}
+.middle-main::-webkit-scrollbar-thumb{
+    background-color: #88888888;
+}
+.custom-scrollbar {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  width: 10px;
+  background: rgba(0,0,0,0.2);
+}
+.middle-main .playlist-2{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(rgb(40, 40, 40) 30%, rgb(20, 20, 20) 70%)
+}
+.playlist-2 .playlist{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    background-color: rgb(80, 80, 80);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.playlist-2 .play-logo{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
+.playlist-2 .play-logo img{
+    width: 100%;
+    height: 100%;
+}
+.playlist-2 .playlist .info{
+    color: white;
+    padding-left: 10px;
+    font-size: 0.8rem;
+    position: relative;
+}
+.playlist-2 .playlist .info i{
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    align-items: center;
+    font-size: 1.8rem;
+    left: 190px;
+    bottom: 10px;
+    display: none;
+    
+}
+.playlist-2 .playlist:hover{
+    background-color: rgb(60, 60, 60);
+    cursor: pointer;
+}
+.playlist-2 .playlist:hover .info i{
+    display: block;
+    color: rgb(0, 203, 0);
+}
+
+.playlist-3{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+}
+.playlist-3 .playlists{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+.playlist-3 .playlists .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    color: white;
+}
+.playlist-3 .playlists .head a{
+    text-decoration: none;
+    color: rgb(80, 80, 80);
+}
+.playlist-3 .playlists .head a:hover{
+    text-decoration: underline;
+}
+.playlist-3 .playlists .main{
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.playlist-3 .playlists .main::-webkit-scrollbar{
+    overflow: hidden;
+    height: 0px;
+    width: 0px; 
+}
+.playlist-3 .playlists .main::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}   
+.playlist-3 .playlists .main::-webkit-scrollbar-thumb{
+    background: #888;
+}
+
+.playlist-3 .playlists .playlist{
+    width: 170px;
+    /* height: 220px */
+    background-color: rgb(20, 20, 20);
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+.playlist-3 .playlists .playlist .play-logo{
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.playlist-3 .playlists .playlist .play-logo i{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 2.5rem;
+    display: none;
+}
+.playlist-3 .playlists .playlist img{
+    width: 100%;
+    height: 100%;
+}
+.playlist-3 .playlists .playlist .info{
+    padding: 10px;
+}
+.playlist-3 .playlists .playlist a{
+    text-decoration: none;
+    color: white;
+}
+.playlist-3 .playlists .playlist h3{
+    font-size: 1rem;
+    padding: 3px 0px;
+}
+.playlist-3 .playlists .playlist p{
+    color: rgb(100, 100, 100);
+}
+.playlist-3 .playlists .playlist:hover{
+    background-color: rgb(40, 40, 40);
+    cursor: pointer;
+}
+.playlist-3 .playlists .playlist:hover .play-logo i{
+    display: block;
+    color: rgb(0, 203, 0);
+}
+.playlist-3 .playlists .playlist a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer{
+    width: 100%;
+    height: 550px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px 10px;
+}
+.footer hr{
+    border: 1px solid #888;
+}
+.footer .links-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 40px 10px;
+}
+.footer .links-1 .phase{
+    width: 130px;
+    height: 300px;
+    padding: 5px;
+}
+.footer .links-1 .phase h3{
+    color: white;
+    padding: 5px;
+}
+.footer .links-1 .phase ol{
+    list-style: none;
+    font-weight: 500;
+}
+.footer .links-1 .phase ol li{
+    padding: 3px;
+}
+.footer .links-1 .phase a{
+    text-decoration: none;
+    color: #888;
+}
+.footer .links-1 .phase a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.footer .links-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0px;
+}
+.footer .links-2 .phase{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: rgb(50, 50, 50);
+    border-radius: 50px;
+}
+.footer .links-2 .phase a{
+    color: white;
+}
+.footer .links-2 .phase:hover{
+    background-color: rgb(60, 60, 60);
+}
+.footer .links-3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.footer .links-3 .phase{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    text-align: center;
+}
+.footer .links-3 .phase a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: rgb(200, 200, 200);
+}
+.footer .links-3 .phase a:hover{
+    color: white;
+}
+.footer .links-3 .copy{
+    color: #888
+}

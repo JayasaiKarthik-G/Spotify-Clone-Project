@@ -1,0 +1,156 @@
+
+.middle-head .offcanvas{
+    display: none;
+}
+.middle .offcanvas2{
+    display: none;
+}
+.middle-head #user{
+    display: none;
+}
+.middle .play-song{
+    display: none;
+}
+
+
+@media (min-width:0px) and (max-width:768px){
+    nav, .left, .right, .music{
+        display: none;
+    }
+    .middle-main .footer{
+        display: none;
+    }
+    .middle-head .offcanvas2{
+        display: none;
+    }
+    body{
+        overflow: hidden;
+    }
+    .middle{
+        height: 100vh;
+        width: 100vw;
+        margin-top: -70px;
+        display: flex;
+        flex-direction: column;
+    }
+    .middle-head .head-btn{
+        display: flex;
+    }
+    .middle-head .offcanvas{
+        display:block;
+        margin-left: auto;
+        padding: 0px 5px;
+    }
+    .middle-head .offcanvas ol{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        font-size: 2rem;
+        color: rgb(150, 150, 150);
+        list-style: none;
+    }
+    .middle-head .offcanvas li:hover{
+        color: white;
+        cursor: pointer;
+    }
+    .middle-main{
+        flex: 1;
+        overflow-y: auto;
+        min-height: 0;  
+    }
+    .playlist-2 .playlist:hover .info i{
+        display: none;
+    }
+    .middle .play-song{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgb(100, 100, 100);
+        padding: 5px 10px;
+    }
+    .middle .play-song .play-info{
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+        gap: 10px;
+    }
+    .middle .play-song .play-info .logo{
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: black;
+        overflow: hidden;
+    }
+    .middle .play-info img{
+        width: 100%;
+    }
+    .middle .play-song .play-info .info{
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        font-size: 0.8rem;
+    }
+    .middle .play-song span{
+        color: rgb(200, 200, 200);
+    }
+    .middle .play-song .btn{
+        font-size: 1rem;
+        color: white;
+        background-color: transparent;
+        margin: 0px 5px;
+        border: none;
+    }
+}
+@media (min-width:0px) and (max-width:426px){
+    .middle{
+        height: 100vh;
+        width: 100vw;
+        margin-bottom: 100px;
+    }
+    .middle-head .offcanvas{
+        display: none;
+    }
+    .middle-head #user{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 1.5rem;
+    }
+    .middle-head .head-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .middle .offcanvas2{
+        display: block;
+    }
+    .middle .offcanvas2 ol{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        font-size: 1.5rem;
+        color: rgb(150, 150, 150);
+        list-style: none;
+        padding: 20px 10px;
+    }
+    .middle .offcanvas2 li:hover{
+        color: white;
+        cursor: pointer;
+    }
+    .middle .offcanvas2 p{
+        display: flex;
+        justify-content: center;
+        font-size: 0.5rem;
+    }
+    
+}
