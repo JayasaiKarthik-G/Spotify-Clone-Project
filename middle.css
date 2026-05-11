@@ -7,6 +7,8 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    padding-bottom: calc(env(safe-area-inset-bottom) + 80px);
+    box-sizing: border-box;
 }
 .middle-head{
     display: flex;
